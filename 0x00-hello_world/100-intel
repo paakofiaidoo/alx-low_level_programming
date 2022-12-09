@@ -1,0 +1,4 @@
+#!/bin/bash
+CFILE=$1
+gcc -S -masm=intel -o $CFILE.s $CFILE
+echo "Assembly code generated for $CFILE: $CFILE.s"
